@@ -101,9 +101,7 @@ body {
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
-.overlay{
-    
-}
+
 
 .pic:hover img {
     
