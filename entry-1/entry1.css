@@ -77,83 +77,65 @@ body {
 
 .thejack {
 
-    height:100px;
+    height:10px;
     padding-left: 80px;
    
   }
   .thejack h1{
-    font-size: 120px;
+    padding-top: 10px;
+  font-size: 110px;
   color: #e7d292;
   font-weight: 550;
   letter-spacing: -0.1em;
   line-height: 0px;
   }
-  .jacks{
-    
-    
-    height:350px;
-    padding-bottom: 90px;
-  }
-
-img{
-    position: absolute;
-    padding-left: 100px;
-    padding-top:70px ;
-    width:250px;
-    height:350px;
-   
+  .slider{
+    height: 250px;
+    margin:auto;
+    position:relative;
+    width:90%;
+    display:grid;
+    padding-top: 20px;
+    place-items: center;
 }
 
-.i1{
-    animation-name: move1;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-
+.slide-track{
+  display:flex;
+  width:cal(250px*16);
+  animation:scroll 7s linear infinite;
 }
-@keyframes move1{from{transform: translateX(-200px)}
-to{transform: translateX(1600px)}}
 
-.i2{
-    animation-name: move2;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-
+@keyframes scroll{
+  0%{transform: translateX(0);}
+  0%{transform:translateX(calc(-250px*4))}
 }
-@keyframes move2{from{transform: translateX(200px)}
-to{transform: translateX(2000px)}}
-
-.i3{
-    animation-name: move3;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-
+.slide{
+  height:350px;
+  width: 250px;
+  display:flex;
+  align-items:center;
+  padding-left: 20px;
+  
 }
-@keyframes move3{from{transform: translateX(600px)}
-to{transform: translateX(2400px)}}
-
-.i4{
-    animation-name: move4;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-
+.slide img{
+  width:100%;
+  
 }
-@keyframes move4{from{transform: translateX(1000px)}
-to{transform: translateX(2800px)}}
+
+
+
 
 .details{
     display:flex;
     flex-direction: row;
-    height: 140px;
+    height: 165px;
     background-color: #e7d292;
     border:4px solid #6950d0;
    
 
 }
 .players{
+  
     width:60%;
     border-right:4px solid #6950d0;
 
@@ -164,6 +146,7 @@ font-size: 22px;
 font-weight: 550; 
 letter-spacing: -0.03em;
 padding-left: 80px;
+padding-top:20px;
 
 line-height: 110%;
 }
@@ -176,13 +159,15 @@ line-height: 110%;
 font-weight: 550; 
 letter-spacing: -0.03em;
 padding-left: 60px;
+line-height: 0;
+padding-top: 40px;
 }
 .objective p{
     color:#6950d0;
 font-size: 22px;
 font-weight: 450; 
 letter-spacing: 0.1em;
-
+line-height: 0;
 padding-left: 60px;
 }
 .title h2{
@@ -230,43 +215,4 @@ padding-left: 60px;
     
     }
 
-  /* .1{
-    grid-row-start:1 
-    grid-column-start:1 ;
-  }
-  .2{
-    grid-row-start:1
-    grid-column-start:2;
-  }
-  .3{
-    grid-row-start:1
-    grid-column-start:3;
-  }
-  .4{
-    grid-row-start:1
-    grid-column-start:4;
-  }
-  .5{
-    grid-row-start:1;
-    grid-column-start:5;
-  }
-  .6{
-    grid-row-start:2;
-    grid-column-start:1;
-  }
-  .7{
-    grid-row-start:2;
-    grid-column-start:2;
-  }
-  .8{
-    grid-row-start:2;
-    grid-column-start:3;
-  }
-  .9{
-    grid-row-start:2;
-    grid-column-start:4;
-  }
-  .10{
-    grid-row-start:2;
-    grid-column-start:5;
-  } */
+  
