@@ -230,20 +230,20 @@ padding-left: 60px;
     
     }
 
-  .1{
-    grid-row-start:1;
-    grid-column-start:1;
+  /* .1{
+    grid-row-start:1 
+    grid-column-start:1 ;
   }
   .2{
-    grid-row-start:1;
+    grid-row-start:1
     grid-column-start:2;
   }
   .3{
-    grid-row-start:1;
+    grid-row-start:1
     grid-column-start:3;
   }
   .4{
-    grid-row-start:1;
+    grid-row-start:1
     grid-column-start:4;
   }
   .5{
@@ -269,4 +269,4 @@ padding-left: 60px;
   .10{
     grid-row-start:2;
     grid-column-start:5;
-  }
+  } */
