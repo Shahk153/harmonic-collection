@@ -1,0 +1,272 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-weight: lighter;
+    background: #e7d292;
+    text-decoration: none;
+    list-style: none;
+
+  }
+  
+  
+  .header{
+    display: flex;
+    flex-direction: row;
+   height: 110px;
+}
+
+.logo{
+   
+   width:1000px;
+    align-self: left;
+}
+.logo h1{
+    font-size: 40px;
+  color: #6950d0;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  line-height: 80%;
+  text-align:center;
+  padding-right: 600px;
+
+}
+.home{
+    text-decoration: none;
+}
+
+.nav{
+    color: #6950d0;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  
+}
+.arcade{
+    width:350px;
+    align-self: center;
+    padding-left: 100px;
+}
+
+
+.about{
+    width:200px;
+    padding-left: 80px;
+    align-self: center;
+
+}
+.abt{
+    text-decoration: none;
+}
+.arcade{
+    text-decoration: none;
+}
+.nav :hover{text-decoration: underline;}
+
+.entry{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 550px;
+    background-color: #6950d0;
+    
+
+}
+
+   
+
+.thejack {
+
+    height:100px;
+    padding-left: 80px;
+   
+  }
+  .thejack h1{
+    font-size: 120px;
+  color: #e7d292;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  line-height: 0px;
+  }
+  .jacks{
+    
+    
+    height:350px;
+    padding-bottom: 90px;
+  }
+
+img{
+    position: absolute;
+    padding-left: 100px;
+    padding-top:70px ;
+    width:250px;
+    height:350px;
+   
+}
+
+.i1{
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move1{from{transform: translateX(-200px)}
+to{transform: translateX(1600px)}}
+
+.i2{
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move2{from{transform: translateX(200px)}
+to{transform: translateX(2000px)}}
+
+.i3{
+    animation-name: move3;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move3{from{transform: translateX(600px)}
+to{transform: translateX(2400px)}}
+
+.i4{
+    animation-name: move4;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move4{from{transform: translateX(1000px)}
+to{transform: translateX(2800px)}}
+
+.details{
+    display:flex;
+    flex-direction: row;
+    height: 140px;
+    background-color: #e7d292;
+    border:4px solid #6950d0;
+   
+
+}
+.players{
+    width:60%;
+    border-right:4px solid #6950d0;
+
+}
+.players p{
+    color:#6950d0;
+font-size: 22px;
+font-weight: 550; 
+letter-spacing: -0.03em;
+padding-left: 80px;
+
+line-height: 110%;
+}
+.objective{
+    width:40%; 
+}
+.objective h4{
+    color:#6950d0;
+    font-size: 22px;
+font-weight: 550; 
+letter-spacing: -0.03em;
+padding-left: 60px;
+}
+.objective p{
+    color:#6950d0;
+font-size: 22px;
+font-weight: 450; 
+letter-spacing: 0.1em;
+
+padding-left: 60px;
+}
+.title h2{
+  padding-left: 100px;
+    background-color: #e7d292;
+    font-size: 110px;
+  color:#6950d0;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  
+  }
+  .container {
+    
+    display: grid;
+    grid-template-rows: 300px 300px ;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    justify-content: center;
+    background-color: #e7d292;
+    border: 4px solid #6950d0;
+    row-gap: 50px;
+    
+    
+  }
+ 
+  .steps p{
+    color:#6950d0;
+    font-size: 20px;
+    font-weight: 550; 
+    letter-spacing: -0.03em;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    line-height: 110%;
+
+  }
+
+  .steps h1{
+    color:#6950d0;
+    font-size: 50px;
+    font-weight: 550; 
+    letter-spacing: -0.03em;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 20px;
+    
+    }
+
+  .1{
+    grid-row-start:1;
+    grid-column-start:1;
+  }
+  .2{
+    grid-row-start:1;
+    grid-column-start:2;
+  }
+  .3{
+    grid-row-start:1;
+    grid-column-start:3;
+  }
+  .4{
+    grid-row-start:1;
+    grid-column-start:4;
+  }
+  .5{
+    grid-row-start:1;
+    grid-column-start:5;
+  }
+  .6{
+    grid-row-start:2;
+    grid-column-start:1;
+  }
+  .7{
+    grid-row-start:2;
+    grid-column-start:2;
+  }
+  .8{
+    grid-row-start:2;
+    grid-column-start:3;
+  }
+  .9{
+    grid-row-start:2;
+    grid-column-start:4;
+  }
+  .10{
+    grid-row-start:2;
+    grid-column-start:5;
+  }
