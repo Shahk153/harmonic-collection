@@ -63,7 +63,23 @@ body {
     color: #a6f1ac;
 }
 .nav :hover{text-decoration: underline;}
+.buynow{
+  background-color: #db6089;
+ position:fixed;
+ border: 15px solid #db6089;
+ left: 1440px;
+ 
+}
+.buynow h1{
+  color:#a6f1ac;
+  font-size: 40px;
+  font-weight: 550; 
+  letter-spacing: -0.03em;
+writing-mode: vertical-lr;
+line-height: 0px;
+text-decoration:none;
 
+}
 .entry{
     display:flex;
     flex-direction: column;
