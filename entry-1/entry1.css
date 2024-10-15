@@ -108,14 +108,17 @@ text-decoration:none;
   letter-spacing: -0.1em;
   line-height: 0px;
   }
+  .ani{width:100%; overflow: hidden;
+  
+  }
   .slider{
-    height: 250px;
+    height: 430px;
     margin:auto;
     position:relative;
     width:90%;
     display:grid;
-    padding-top: 20px;
     place-items: center;
+    
 }
 
 .slide-track{
