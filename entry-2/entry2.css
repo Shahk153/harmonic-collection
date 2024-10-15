@@ -68,7 +68,13 @@ body {
  position:fixed;
  border: 15px solid #db6089;
  left: 1440px;
- 
+ transition: backgroung-color   ease-in-out; 
+ transition: border   ease-in-out;
+}
+
+.buynow.scrolled{
+  background-color: #a6f1ac;
+  border: 15px solid #a6f1acd0;
 }
 .buynow h1{
   color:#a6f1ac;
@@ -77,9 +83,19 @@ body {
   letter-spacing: -0.07em;
 writing-mode: vertical-lr;
 line-height: 0px;
-text-decoration:none;
-
+transition: color   ease-in-out; 
 }
+
+.buynow.scrolled.buynow h1{
+  color:#db6089;}
+
+.buynow a{
+  text-decoration:none;
+}
+
+
+
+
 .entry{
     display:flex;
     flex-direction: column;
@@ -264,5 +280,3 @@ padding-left: 60px;
     line-height: 10px;
     
     }
-
-  

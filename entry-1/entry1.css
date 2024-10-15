@@ -64,12 +64,21 @@ body {
 
 .buynow{
   background-color: #e7d292;
- position:fixed;
+ 
  border: 15px solid #e7d292;
  left: 1440px;
+ z-index: 1;
+ position:fixed;
+ transition: backgroung-color   ease-in-out; 
+ transition: border   ease-in-out;
+}
+
+.buynow.scrolled{
+  background-color: #6950d0;
+  border: 15px solid #6950d0;
+}
 
  
-}
 .buynow h1{
   color:#6950d0;
   font-size: 40px;
@@ -77,8 +86,14 @@ body {
   letter-spacing: -0.07em;
 writing-mode: vertical-lr;
 line-height: 0px;
-text-decoration:none;
+transition: color   ease-in-out; 
+}
 
+.buynow.scrolled.buynow h1{
+  color:#e7d292;
+}
+.buynow a{
+  text-decoration:none;
 }
 
 .entry{

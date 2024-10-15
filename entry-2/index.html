@@ -113,4 +113,14 @@
 
 </div>
 </body>
+
+<script>
+  document.addEventListener('scroll',()=>{
+    const buynow = document.querySelector('.buynow');
+    if(window.scrollY>530){
+      buynow.classList.add('scrolled')
+    }
+    else{buynow.classList.remove('scrolled')}
+  })
+</script>
 </html>
