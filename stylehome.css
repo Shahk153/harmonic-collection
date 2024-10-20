@@ -49,15 +49,15 @@ body {
   align-items: flex-start;
  
 }
-/* .intro{
-  /* border-top: 4px solid #6950d0; */
+
 
 .box1 {
   border-right: 4px solid #6950d0;
   width: 50%;
-  height: 420px;
+  height: 430px;
   top: 0;
   /*left: 60px;  Left margin */
+  min-width:500px;
 }
 h1{
   font-size: 110px;
@@ -67,13 +67,15 @@ h1{
   line-height: 80%;
   text-align:center;
   padding-right: 250px;
-left:0;
+left:20px;
+position: fixed;
 }
 
 /* Styling for the box2 */
 .box2 {
   width:50%;
-  height:420px;
+  height:430px;
+  min-width: 460px;
  
 }
 
@@ -87,6 +89,7 @@ letter-spacing: -0.03em;
 padding-left: 40px;
 padding-top:80px;
 line-height: 140%;
+/* position:fixed; */
   }
 
 
@@ -104,16 +107,18 @@ line-height: 140%;
 
 .image{
 width:50%;
-height: 440px;
+height: 430px;
 background-color:#6950d0;
 border-right: 4px solid #6950d0;
+min-width: 500px;
 }
 
 
 .description{
-  width:36%;
-height: 440px;
+  width:37%;
+height: 430px;
 border-right: 4px solid #6950d0;
+min-width: 385px;
 }
 
 
@@ -136,14 +141,18 @@ padding-top:10px;
 line-height: 120%;
 }
 .filters{
-  width:14%;
-  height:440px;
+  width:13%;
+  height:430px;
+  min-width: 135.27px;
 }
+
+
+
 .game-filters a{
   color: #6950d0;
   font-size: 25px;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: -0.03em;
 line-height: 200%;
 text-decoration: none;
 
@@ -151,3 +160,5 @@ text-decoration: none;
 .game-filters a:hover{
   text-decoration: underline;
 }
+
+
