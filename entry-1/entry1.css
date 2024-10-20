@@ -1,3 +1,57 @@
+nav {
+  height: 90px;
+  background: #e7d292;
+  margin: 0;
+  padding: 0; 
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  color: #6950d0;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 0px;
+  /* letter-spacing: 0.3em; */
+  top:15px;
+  margin-left: auto; /* Pushes content to the right */
+  right: 0;
+  position: fixed;
+  height: 50px;
+}
+nav ul a h1{
+  font-size: 30px;
+  color: #6950d0;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  line-height: 80%;
+  text-align:center;
+left:30px;
+top:0;
+position: fixed;
+}
+
+
+
+nav ul a{
+ 
+  text-decoration: none;
+  padding-right:40px;
+
+}
+nav ul a:hover {
+  text-decoration: underline; /* Underline on hover */}
+
+.arcade{ 
+  padding-right: 100px;
+
+  }
+
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -9,64 +63,12 @@ body {
   }
   
   
-  .header{
-    display: flex;
-    flex-direction: row;
-   height: 110px;
-}
-
-.logo{
-   
-   width:1000px;
-    align-self: left;
-}
-.logo h1{
-    font-size: 40px;
-  color: #6950d0;
-  font-weight: 550;
-  letter-spacing: -0.1em;
-  line-height: 80%;
-  text-align:center;
-  padding-right: 600px;
-
-}
-.home{
-    text-decoration: none;
-}
-
-.nav{
-    color: #6950d0;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  
-}
-.arcade{
-    width:350px;
-    align-self: center;
-    padding-left: 100px;
-}
-
-
-.about{
-    width:200px;
-    padding-left: 80px;
-    align-self: center;
-
-}
-.abt{
-    text-decoration: none;
-}
-.arcade{
-    text-decoration: none;
-}
-.nav :hover{text-decoration: underline;}
-
 .buynow{
+  padding-top: 90px;
   background-color: #e7d292;
  
- border: 15px solid #e7d292;
- left: 1440px;
+ border: 5px solid #e7d292;
+ right: 0;
  z-index: 1;
  position:fixed;
  transition: backgroung-color   ease-in-out; 
@@ -75,7 +77,7 @@ body {
 
 .buynow.scrolled{
   background-color: #6950d0;
-  border: 15px solid #6950d0;
+  border: 5px solid #6950d0;
 }
 
  
@@ -97,6 +99,8 @@ transition: color   ease-in-out;
 }
 
 .entry{
+  
+  padding-top:90px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,7 +187,7 @@ font-size: 22px;
 font-weight: 550; 
 letter-spacing: -0.03em;
 padding-left: 80px;
-padding-top:20px;
+padding-top:8px;
 
 line-height: 110%;
 }
@@ -203,7 +207,7 @@ padding-top: 40px;
     color:#6950d0;
 font-size: 22px;
 font-weight: 450; 
-letter-spacing: 0.1em;
+/* letter-spacing: 0.1em; */
 line-height: 0;
 padding-left: 60px;
 }
@@ -252,4 +256,35 @@ padding-left: 60px;
     
     }
 
-  
+/* For medium desktops (width <= 1440px) */
+@media (max-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on smaller desktops */
+    gap: 40px; /* Slightly smaller gap */
+  }
+}
+
+/* For smaller desktops (width <= 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller desktops */
+    gap: 30px; /* Smaller gap */
+  }
+}
+
+/* For large tablets (width <= 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for large tablets */
+    gap: 20px; /* Adjust gap for tablets */
+  }
+}
+
+/* For small tablets and mobile (width <= 768px) */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Single-column layout for mobile */
+    gap: 10px; /* Smallest gap */
+  }
+}
+
