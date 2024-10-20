@@ -5,11 +5,12 @@ nav ul{
   font-size: 25px;
   font-weight: 400;
   line-height: 0;
-  letter-spacing: 0.3em;
+  /* letter-spacing: 0.3em; */
   height:10px;
   margin-left: auto; /* Pushes content to the right */
-  right: 0;
-
+  right: 40px;
+  top:15px;
+ /* top:15px; */
 background-color: transparent;
 /* justify-content: right; */
 position:fixed;

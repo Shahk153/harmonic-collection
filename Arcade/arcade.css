@@ -1,18 +1,42 @@
 
+nav {
+    height: 90px;
+    background: #e7d292;
+    margin: 0;
+    padding: 0; 
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
 nav ul {
     display: flex;
     color: #6950d0;
     font-size: 25px;
     font-weight: 400;
     line-height: 0px;
-    letter-spacing: 0.3em;
+    /* letter-spacing: 0.3em; */
+    top:15px;
     margin-left: auto; /* Pushes content to the right */
     right: 0;
-    background-color: #e7d292;
     position: fixed;
-    z-index: 1;
     height: 50px;
 }
+nav ul a h1{
+    font-size: 30px;
+    color: #6950d0;
+    font-weight: 550;
+    letter-spacing: -0.1em;
+    line-height: 80%;
+    text-align:center;
+  left:30px;
+  top:0;
+  position: fixed;
+  }
+ 
+
 
   nav ul a{
    
@@ -36,154 +60,10 @@ body {
     text-decoration: none;
     list-style: none;
   }
-/* .header{
-    display: flex;
-    flex-direction: row;
-   height: 115px;
-}
-
-.logo{
-   
-   width:1000px;
-    align-self: left;
-}
-.logo h1{
-    font-size: 40px;
-  color: #6950d0;
-  font-weight: 550;
-  letter-spacing: -0.1em;
-  line-height: 80%;
-  text-align:center;
-  padding-right: 600px;
-
-}
-.home{
-    text-decoration: none;
-}
-
-.nav{
-    color: #6950d0;
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  
-}
-.arcade{
-    width:200px;
-    align-self: center;
-    padding-left: 100px;
-}
 
 
-.about{
-    width:200px;
-    padding-left: 80px;
-    align-self: center;
-
-}
-.abt{
-    text-decoration: none;
-}
-.nav :hover{text-decoration: underline;}
-.line{
-    height: 4px;
-    background-color: #6950d0;
-   
-} */
-
-
-.container {
-    padding-left: 45px;
-    padding-top: 200px;
-    display: grid;
-    grid-template-rows: 450px 450px;
-    grid-template-columns: 350px 350px 350px 350px;
-    justify-content: center;
-    background-color: #e7d292;
-    
-}
-
-
-.pic {
-    width: 300px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-}
-
-.pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.1s ease;
-}
-
-.pic .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:left;
-    opacity: 0;
-    background: #6950d0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-
-.pic:hover img {
-    
-    opacity: 1;
-}
-
-.pic:hover .overlay {
-    opacity: 1;
-}
-
-.pic1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-.pic2 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-}
-
-.pic3 {
-    grid-row-start: 1;
-    grid-column-start: 3;
-}
-
-.pic4 {
-    grid-row-start: 1;
-    grid-column-start: 4;
-}
-
-.pic5 {
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-.pic6 {
-    grid-row-start: 2;
-    grid-column-start: 2;
-}
-
-.pic7 {
-    grid-row-start: 2;
-    grid-column-start: 3;
-}
-
-.pic8 {
-    grid-row-start: 2;
-    grid-column-start: 4;
-}
-
-h2{
+  h2{
+    margin-right: auto;
     color:#e7d292;
     font-size: 50px;
 font-weight: 550; 
@@ -192,3 +72,75 @@ line-height: 100%;
 padding-left: 30px;
 padding-bottom: 250px;
 }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    padding: 50px; /* Add some padding around the container */
+    padding-top:200px;
+  }
+  
+  .pic {
+    width: 300px; /* Fixed width for all images */
+    height: 400px; /* Fixed height for all images */
+    margin: 10px; /* Space between items */
+    position: relative; /* For overlay positioning */
+    overflow: hidden; /* To hide overflow from the images */
+  }
+  
+  .pic img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Make the image take the full height of the container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6950d0; /* Semi-transparent background for overlay */
+    color: white; /* Overlay text color */
+    display: flex; /* Center text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    opacity: 0; /* Hide overlay initially */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+  }
+  
+  .pic:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  @media (max-width: 600px) {
+    .pic {
+      width: calc(100% - 20px); /* Full width on small screens */
+      height: 300px; /* Adjust height for small screens */
+    }
+    h2{
+        margin-right: auto;
+        color:#e7d292;
+        font-size: 50px;
+    font-weight: 550; 
+    letter-spacing: -0.05em;
+    line-height: 100%;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .pic {
+      width: calc(50% - 20px); /* Two items per row on medium screens */
+      height: 400px; /* Maintain fixed height */
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .pic {
+      width: calc(25% - 20px); /* Four items per row on large screens */
+      height: 400px; /* Maintain fixed height */
+    }
+  }
