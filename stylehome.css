@@ -1,4 +1,5 @@
 nav ul{
+  
   display:flex;
   color: #6950d0;
   font-size: 25px;
@@ -48,9 +49,8 @@ body {
   align-items: flex-start;
  
 }
-.intro{
+/* .intro{
   /* border-top: 4px solid #6950d0; */
-}
 
 .box1 {
   border-right: 4px solid #6950d0;
