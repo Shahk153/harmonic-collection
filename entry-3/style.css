@@ -1,0 +1,192 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+nav {
+  height: 90px;
+  background: transparent;
+  margin: 0;
+  padding: 0; 
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  color: blue;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 0px;
+  /* letter-spacing: 0.3em; */
+  top:15px;
+  margin-left: auto; /* Pushes content to the right */
+  right: 0;
+  position: fixed;
+  height: 50px;
+}
+nav ul a h1{
+  font-size: 30px;
+  color: blue;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  line-height: 80%;
+  text-align:center;
+left:30px;
+top:0;
+position: fixed;
+}
+
+
+
+nav ul a{
+  color: blue;
+  text-decoration: none;
+  padding-right:40px;
+
+}
+nav ul a:hover {
+  text-decoration: underline; /* Underline on hover */}
+
+.arcade{ 
+  padding-right: 100px;
+
+  }
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-weight: lighter;
+    background: oldlace;
+    text-decoration: none;
+    list-style: none;
+
+  }
+  
+  
+.buynow{
+  top: 90px;
+  background-color: blue;
+ 
+ border: 5px solid b;
+ right: 0;
+ z-index: 1;
+ position:fixed;
+ transition: backgroung-color   ease-in-out; 
+ transition: border   ease-in-out;
+}
+
+.buynow.scrolled{
+  background-color: blue;
+  border: 5px solid blue;
+}
+
+ 
+.buynow h1{
+  color:oldlace;
+  font-size: 40px;
+  font-weight: 600; 
+  letter-spacing: -0.07em;
+writing-mode: vertical-lr;
+line-height: 0px;
+transition: color   ease-in-out; 
+}
+
+.buynow.scrolled.buynow h1{
+  color:rgb(253, 245, 230);
+}
+.buynow a{
+  text-decoration:none;
+}
+
+
+.title h2{
+  padding-left: 100px;
+    background-color: oldlace;
+    font-size: 110px;
+  color:blue;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  
+  }
+  .container {
+    
+    display: grid;
+    grid-template-rows: 300px 300px ;
+    grid-template-columns: 300px 300px 300px 300px 300px;
+    justify-content: center;
+    background-color: oldlace;
+    border: 4px solid blue;
+    row-gap: 50px;
+    
+    
+  }
+ 
+  .steps p{
+    color:blue;
+    font-size: 20px;
+    font-weight: 550; 
+    letter-spacing: -0.03em;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    line-height: 110%;
+
+  }
+
+  .steps h1{
+    color:blue;
+    font-size: 50px;
+    font-weight: 550; 
+    letter-spacing: -0.03em;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 20px;
+    
+    }
+
+/* For medium desktops (width <= 1440px) */
+@media (max-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on smaller desktops */
+    gap: 40px; /* Slightly smaller gap */
+  }
+}
+
+/* For smaller desktops (width <= 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller desktops */
+    gap: 30px; /* Smaller gap */
+  }
+}
+
+/* For large tablets (width <= 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for large tablets */
+    gap: 20px; /* Adjust gap for tablets */
+  }
+}
+
+/* For small tablets and mobile (width <= 768px) */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Single-column layout for mobile */
+    gap: 10px; /* Smallest gap */
+  }
+}
+
+
+#container{
+  /* padding-top:10em; */
+  /* position:absolute; */
+  top:0;
+  z-index:10;
+}
