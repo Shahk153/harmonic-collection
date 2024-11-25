@@ -1,135 +1,215 @@
+nav ul{
+  
+  display:flex;
+  color: #3838fb;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 0;
+  /* letter-spacing: 0.3em; */
+  height:10px;
+  margin-left: auto; /* Pushes content to the right */
+  right: 40px;
+  top:15px;
+ /* top:15px; */
+background-color: transparent;
+/* justify-content: right; */
+position:fixed;
+
+
+}
+nav ul a{
+  color: #3838fb;
+  text-decoration: none;
+  padding-right:40px;
+
+}
+nav ul a:hover {
+  text-decoration: underline; /* Underline on hover */}
+
+.arcade{ 
+  padding-right: 100px;
+
+  }
+
+
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    font-weight: lighter;
-    background: #ffc46b;
-    text-decoration: none;
-    list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-weight: lighter;
+  background: #90ee90;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* Page-intro container */
+.page-intro {
+  display: flex;
+  
+  align-items: flex-start;
+ 
+}
+
+
+.box1 {
+  border-right: 4px solid #3838fb;
+  width: 50%;
+  height: 430px;
+  top: 0;
+  /*left: 60px;  Left margin */
+  min-width:500px;
+}
+h1{
+  font-size: 110px;
+  color: #3838fb;
+  font-weight: 550;
+  letter-spacing: -0.1em;
+  line-height: 80%;
+  text-align:center;
+  padding-right: 250px;
+left:20px;
+position: fixed;
+}
+
+/* Styling for the box2 */
+.box2 {
+  width:50%;
+  height:430px;
+  min-width: 460px;
+ 
+}
+
+
+
+  .tag-line{
+color:#3838fb;
+font-size: 45px;
+font-weight: 550; 
+letter-spacing: -0.03em;
+padding-left: 40px;
+padding-top:80px;
+line-height: 140%;
+/* position:fixed; */
   }
-  
-  
-  /* Page-intro container */
-  .page-intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-   
-  }
-  .intro{
-    width:730px;
-    border: 4px solid #3b5148;
-  }
-  
-  .box1 {
-    height: 440px;
-    top: 0;
-    /*left: 60px;  Left margin */
-  }
-  h1{
-    font-size: 110px;
-    color: #3b5148;
-    font-weight: 550;
-    letter-spacing: -0.1em;
-    line-height: 80%;
-    text-align:center;
-    padding-right: 250px;
-  left:0;
-  }
-  
-  /* Styling for the box2 */
-  .box2 {
-    height:440px;
-    width:780px;
-  }
-  
-  
-  nav ul{
-    color: #3b5148;
-    font-size: 25px;
-    font-weight: 400;
-    letter-spacing: 0.3em;
-    width: 375px;
-    padding-left:300px;
-  
-  }
-  nav ul a{
-    padding-left: 65px;
-    text-decoration: none;
-    color:#3b5148
-  
-  }
-  nav ul a:hover {
-    text-decoration: underline; /* Underline on hover */}
-  
-  
-    .tag-line{
-  color:#3b5148;
-  font-size: 45px;
+
+
+
+.part-2 {
+  display: flex;
+  align-items: flex-start;
+  /* border: 4px solid #3838fb; */
+  padding: 0;
+}
+.row-2{
+  border-top: 4px solid #3838fb;
+}
+
+.image img {
+  width: 90%; /* Scales the image relative to its container */
+  height: 390px; /* Maintains aspect ratio */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  margin: 20px auto; /* Centers the image */
+  display: block; /* Ensures proper centering */
+}
+
+/* Styling the buttons */
+button.previous,
+button.next {
+  background: #3838fb; /* Matches your theme color */
+  color: #ffffff; /* Makes text stand out */
+  border: none; /* Removes default border */
+  font-size: 1.5rem; /* Adjusts button text size */
+  padding: 10px 20px; /* Adds spacing inside the button */
+  border-radius: 50%; /* Makes the buttons circular */
+  cursor: pointer; /* Adds a pointer cursor on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+  transition: transform 0.2s ease, background 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for buttons */
+button.previous:hover,
+button.next:hover {
+  background: #4e39a0; /* Darkens the background on hover */
+  transform: scale(1.1); /* Slightly enlarges the button */
+}
+
+/* Positioning the buttons */
+button.previous {
+  position: absolute;
+  left: 5%; /* Positions button 5% from the left edge */
+  top: 50%; /* Centers button vertically */
+  transform: translateY(-50%); /* Corrects alignment */
+}
+
+button.next {
+  position: absolute;
+  right: 5%; /* Positions button 5% from the right edge */
+  top: 50%; /* Centers button vertically */
+  transform: translateY(-50%); /* Corrects alignment */
+}
+
+/* Ensuring the parent container has relative positioning */
+.row-2.carousel.image {
+  position: relative; /* Allows absolute positioning of buttons */
+}
+
+
+.image{
+width:50%;
+height: 430px;
+background-color:#3838fb;
+border-right: 4px solid #3838fb;
+min-width: 500px;
+}
+
+
+.description{
+  width:37%;
+height: 430px;
+border-right: 4px solid #3838fb;
+min-width: 385px;
+}
+
+
+h3{
+  color:#3838fb;
+  font-size: 40px;
   font-weight: 550; 
   letter-spacing: -0.03em;
-  padding-left: 40px;
-  padding-top:80px;
-  line-height: 140%;
-    }
-  
-  
-  
-  .part-2 {
-    display: flex;
-    align-items: flex-start;
-    border: 4px solid #3b5148;
-    padding: 0;
-  }
-  .row-2{
-    border: 2px solid #3b5148;
-  }
-  
-  
-  .image{
-  width:755px;
-  height: 440px;
-  background-color:#3b5148;
-  }
-  
-  
-  .description{
-    width:550px;
-  height: 440px;
-  }
-  
-  
-  h3{
-    color:#3b5148;
-    font-size: 40px;
-    font-weight: 550; 
-    letter-spacing: -0.03em;
-    padding-left: 30px;
-    padding-top:150px;
-    line-height: 10%;
-  }
-  .text{
-    color:#3b5148;
-  font-size: 25px;
-  font-weight: 400; 
-  letter-spacing: -0.03em;
   padding-left: 30px;
-  padding-top:10px;
-  line-height: 120%;
-  }
-  .filters{
-    width:250px;
-    height:440px;
-  }
-  .game-filters a{
-    color: #3b5148;
-    font-size: 25px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-  line-height: 200%;
-  text-decoration: none;
-  
-  }
-  .game-filters a:hover{
-    text-decoration: underline;
-  }
-  
+  padding-top:150px;
+  line-height: 10%;
+}
+.text{
+  color:#3838fb;
+font-size: 25px;
+font-weight: 400; 
+letter-spacing: -0.03em;
+padding-left: 30px;
+padding-top:10px;
+line-height: 120%;
+}
+.filters{
+  width:13%;
+  height:430px;
+  min-width: 135.27px;
+}
+
+
+
+.game-filters a{
+  color: #3838fb;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+line-height: 200%;
+text-decoration: none;
+
+}
+.game-filters a:hover{
+  text-decoration: underline;
+}
+
+

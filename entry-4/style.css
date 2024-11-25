@@ -1,6 +1,6 @@
 nav {
     height: 90px;
-    background: orangered;
+    background: #ff4500;
     margin: 0;
     padding: 0; 
     position: fixed;
@@ -12,7 +12,7 @@ nav {
   
   nav ul {
     display: flex;
-    color: oldlace;
+    color: #fdf5e6;
     font-size: 25px;
     font-weight: 400;
     line-height: 0px;
