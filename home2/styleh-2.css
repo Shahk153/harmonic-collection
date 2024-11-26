@@ -131,7 +131,7 @@ button.next {
 /* Hover effect for buttons */
 button.previous:hover,
 button.next:hover {
-  background: #56f063; /* Darkens the background on hover */
+  background: #db6089; /* Darkens the background on hover */
   transform: scale(1.1); /* Slightly enlarges the button */
 }
 
