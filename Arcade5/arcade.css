@@ -1,7 +1,7 @@
 
 nav {
   height: 90px;
-  background: #fdf5e6;
+  background: #90ee90;
   margin: 0;
   padding: 0; 
   position: fixed;
@@ -13,7 +13,7 @@ nav {
 
 nav ul {
   display: flex;
-  color: #0000ff;
+  color: #3838fb;
   font-size: 25px;
   font-weight: 400;
   line-height: 0px;
@@ -26,7 +26,7 @@ nav ul {
 }
 nav ul a h1{
   font-size: 30px;
-  color: #0000ff;
+  color: #3838fb;
   font-weight: 550;
   letter-spacing: -0.1em;
   line-height: 80%;
@@ -39,7 +39,7 @@ position: fixed;
 
 
 nav ul a{
-  color: #0000ff;
+  color: #3838fb;
   text-decoration: none;
   padding-right:40px;
 
@@ -56,7 +56,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   font-weight: lighter;
-  background: #fdf5e6;
+  background: #90ee90;
   text-decoration: none;
   list-style: none;
 }
@@ -64,7 +64,7 @@ body {
 
 h2{
   margin-right: auto;
-  color:#fdf5e6;
+  color:#90ee90;
   font-size: 50px;
 font-weight: 550; 
 letter-spacing: -0.05em;
@@ -101,7 +101,7 @@ padding-bottom: 250px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #0000ff; /* Semi-transparent background for overlay */
+  background-color: #3838fb; /* Semi-transparent background for overlay */
   color: white; /* Overlay text color */
   display: flex; /* Center text */
   align-items: center; /* Center vertically */
@@ -121,7 +121,7 @@ padding-bottom: 250px;
   }
   h2{
       margin-right: auto;
-      color:#fdf5e6;
+      color:#90ee90;
       font-size: 50px;
   font-weight: 550; 
   letter-spacing: -0.05em;
