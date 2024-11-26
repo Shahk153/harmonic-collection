@@ -14,7 +14,7 @@ function preload() {
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight-90);
   canvas.parent("container");
- 
+ angleMode(DEGREES);
 
   
   }
@@ -34,19 +34,26 @@ function setup() {
     let KX4=random((width/2)+200,width-200)
     let KY4=random((height/2),height-200)
   
-  
+    
+   
     image(koda[(int(random(0,koda.length)))], KX1,
     KY1 ,200, 200);
   
+
+   
     image(koda[(int(random(0,koda.length)))], KX2,
-   KY2 ,200, 200);
+    KY2 ,200, 200);
+    
   
+    
     image(koda[(int(random(0,koda.length)))], KX3,
     KY3 ,200, 200);
     
+
+    
+    
     image(koda[(int(random(0,koda.length)))], KX4,
-   KY4 ,200, 200);
-   
+    KY4 ,200, 200);
     
     
   }  
